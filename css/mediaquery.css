@@ -52,13 +52,18 @@
     }
     .news-right{
         display:flex;
+        justify-content: space-between;
     }
     .news-right input{
-        width:60%
+        width:55%;
+        font-size:0.8rem;
+        padding-left:4px;
+        
     }
     .news-right button{
         width:40%;
         padding:0;
+        font-size:0.8rem;
     }
 
     /*footer*/
@@ -147,12 +152,91 @@
     html{
         font-size:13px;
     }
+    .articles-section-header{
+        padding:40px 0;
+        text-align:center;
+    }
     .article-info-container a{
         margin:0;
     }
     .article-info-container a::after {
     padding:3px;
     }
+    .like-container{
+        width:60px;
+        height:60px;
+    }
+    .fashion-single-right-container{
+        margin-left:0;
+    }
+}
+/*                               max-width:320 */
+@media(max-width:320px){
+    .container{
+        width:90%;
+    }
+  .gallery-container{
+      display:block;
+  }
+  .gallery-single img{
+      display:block;
+  }
+  .footer-container{
+      display:block;
+      text-align:center;
+  }
+  .footer-column{
+      width:100%;
+  }
+  .footer-flex-column{
+      display:block;
 
-    
+  }
+  .footer-flex-column > a{
+      display: block;
+      width:100%;
+  }
+  .followus-container{
+      justify-content: space-between;
+  }
+  .followus-container i{
+      padding:0;
+  }
+  .footer-navbar-container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer-navbar{
+      margin-bottom: 20px;
+  }
+  .sticky-post{
+      left:-6px;
+  }
+  .loadmore-container{
+      margin:30px 0;
+  }
+  .newsletter-section{
+      background-image: url("../img/subscribe.jpg");
+      background-size: cover;
+      background-position:center;
+  }
+  .outer-container{
+      background-image: none;
+      padding:0;
+  }
+  .inner-container{
+      box-shadow: none;
+      
+  }
+  .news-right{
+      flex-direction: column;
+      background-color:rgba(0, 0, 0, 0);
+  }
+  .news-right input{
+      width:100%;
+      margin-bottom:5px;
+  }
+  .news-right button{
+      width:100%;
+  }
 }

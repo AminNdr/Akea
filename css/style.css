@@ -26,6 +26,11 @@ html{
 
 header{
     padding:20px 0;
+    position:fixed;
+    background-color: #fff;
+    width:100%;
+    z-index:2;
+    top:0;
 }
 
 
@@ -277,10 +282,6 @@ li:hover .subMenu-content{
     display: inline-block;
 }
 
-.nav-icons li:last-child i{
-    color:#383838;
-
-}
 
 
 
@@ -299,6 +300,12 @@ li:hover .subMenu-content{
 
     color:#ec6a2a;
 }
+.nav-search i{
+    padding-left:15px;
+}
+.menu-bar{
+    display:none;
+}
 
 
 
@@ -311,6 +318,7 @@ li:hover .subMenu-content{
     height: 400px;
     background-position: center;
     background-size: cover;
+    margin-top:65px;
 }
 .hero-text{
     padding-top: 150px;
@@ -360,9 +368,10 @@ text-transform: uppercase;
 .article-single{
     background-color: #fff;
     position: relative;
-    margin: 17px;
     flex:1; 
+    margin:10px;
 }
+
 .article-single-size{
     width:30%;
 }
@@ -389,8 +398,14 @@ text-transform: uppercase;
 
 
 .article-single-content {
-    padding: 40px 25px;
+    padding-top: 40px;
+    padding-bottom:40px;
 }
+.article-single-content-lrpadding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .article-single-content h3{
     color:#ec6a2a;
     font-size: 0.75rem;
@@ -444,38 +459,22 @@ text-transform: uppercase;
 
 
 
-
-
-
-        /* Articles - loadmore */
-.articles-loadmore{
-    background-color:#f6f6f6;
-    padding: 40px 0 50px 0;
-}
-.articles-loadmore-button{
+.loadmore-container{
     display:flex;
     justify-content: center;
-    text-align: center;
-    
+    margin:80px 0;
+}
+.loadmore-container button{
+    background: #2f2f2f;
+    border:none;
+    color:#fff;
+    width:33%;
+    padding:30px 0;
+    text-transform: uppercase;
+    margin-bottom:40px;
 }
 
-.articles-loadmore-button a{
-    color:#fff;
-    font-size: 0.95rem;
-    font-weight: 400;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    background: #2f2f2f;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 30%;
-    height: 67px;
-    padding-top:25px;
-    transition: all 0.4s;
-}
-.articles-loadmore-button a:hover{
-    background-color: #ec6a2a;
-}
+
 
 
         /*sections header style*/
@@ -525,7 +524,7 @@ color:#383838;
     font-size: 0.75rem;
     font-weight: 500;
     text-transform: uppercase;
-    margin-right:25px;
+    margin-right:20px;
 
 }
 .article-info-container a:after{
@@ -757,6 +756,7 @@ font-size: 0.8rem;
     justify-content: space-between;
     padding:50px 30px;
     box-shadow: 0 0 40px rgba(10, 10, 10, 0.13);
+    align-items: center;
 }
 .news-left h1{
     color:#383838;
@@ -768,17 +768,18 @@ font-size: 0.8rem;
     background: #fff;
 }
 .news-right input{
-    height: 100%;
+    height: 50px;
     border:none;
     padding-left:15px;
     color:#c0c0c0;
     font-weight: 500;
+    outline:none;
 }
 
 
 
 .news-right button{
-    height: 100%;
+    height: 50px;
     color:#fff;
     background:#2f2f2f;
     border:none;
@@ -803,12 +804,20 @@ font-size: 0.8rem;
 
 /* Our gallery*/
 .gallery-section{
-    margin-bottom: 30px;
+    padding: 50px 0 40px 0;
+    background: #f5f5f5;
+    text-align: center;
 }
+
 .gallery-container {
     display: flex;
 }
-
+.gallery-header{
+    font-size: 1.1rem;
+    color:#383838;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
 .gallery-single{
     flex:1;
 }

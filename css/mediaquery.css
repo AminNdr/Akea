@@ -1,20 +1,158 @@
 @media(max-width:1440px){
     .container{
-        width:1000px;
+        width: 980px;
     }
 }
+
+/*                               max-width:1024 */
 @media(max-width:1024px){
     .container{
         width:740px;
     }
-}
-@media(max-width:768px){
-    .container{
-        width:550px;
+        /*header*/
+    .nav-items{
+        display:none;
+    }
+    .nav-icons{
+        display:none;
+    }
+    .nav-logo{
+        flex:8;
+    }
+    .menu-bar{
+        display:block;
+        flex:1;
+    }
+    .menu-search{
+        flex:1;
+    }
+
+    /*technology*/
+    .tech-content-container{
+        display:flex;
+    }
+    .tech-left-container{
+        width:55%;
+    }
+    .tech-right-container{
+        width:40%;
+    }
+    /*Fashion*/
+    .fashion-single-container{
+        align-items: flex-start;
+    }
+    /*newsletter*/
+
+    .inner-container{
+        display:block;
+        text-align:center;
+    }
+    .news-left{
+        margin-bottom:10px;
+    }
+    .news-right{
+        display:flex;
+    }
+    .news-right input{
+        width:60%
+    }
+    .news-right button{
+        width:40%;
+        padding:0;
+    }
+
+    /*footer*/
+    .footer-navbar-container{
+        font-size: 0.8rem;
     }
 }
+/*                               max-width:768 */
+@media(max-width:768px){
+    .container{
+        width:560px;
+    }
+    html{
+        font-size: 15px;
+    }
+     /*hero*/ 
+    .hero h1{
+        font-size: 1.5rem;
+    }
+    .hero span{
+        font-size: 0.8rem;
+    }
+    
+    /*articles*/
+    .article-all{
+        display: block;
+    }
+    .article-column{
+        width:100%;
+        
+    }
+    .article-single{
+        width:100%;
+        margin:0;
+    }
+    .loadmore-container button{
+        width:90%;
+    }
+    /*technology*/
+    .tech-content-container{
+        display:block;
+    }
+    .tech-left-container{
+        width:100%;
+        margin-bottom:30px;
+    }
+    .tech-right-container{
+        width:100%;
+    }
+
+    /*Fashion*/
+    .fashion-single-container{
+        display:block;
+    }
+    .fashion-single-left-container{
+        width:100%;
+        margin-bottom:30px;
+    }
+    .fashion-single-right-container{
+        width:100;
+    }
+
+    /*travel*/
+    .travel-all{
+        display:block;
+    }
+    .travel-single{
+        width:100%;
+    }
+
+    /*footer*/
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer-column{
+        width: 50%;
+    }
+}
+/*                               max-width:576 */
 @media(max-width:576px){
     .container{
         width:90%;
     }
+    html{
+        font-size:13px;
+    }
+    .article-info-container a{
+        margin:0;
+    }
+    .article-info-container a::after {
+    padding:3px;
+    }
+
+    
 }
